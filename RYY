@@ -1,0 +1,88 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<body>
+<img src="css/honkaistarrail.png" style="width: 100%; height: 500px;">
+
+<div class="w3-dropdown-hover w3-animate-right">
+    <button class="w3-button w3-black">Character</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-black">
+        <button class="w3-bar-item w3-button" onclick="openKota('Dan heng')">Dan heng</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Himeko')">Himeko  </button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Selee')"> Selee</button>
+    </div>  
+    </div>
+
+    <div id="Dan heng" class="w3-container kota w3-animate-zoom W3-black" style="display:none">
+<center>
+ <h2> Dan heng </h2>
+ <img src="css/Dan heng.jpg" style="width: 50%; ">
+</center>
+ </div>
+
+ <div id="Himeko" class="w3-container kota w3-animate-zoom W3-black" style="display:none">
+    <center>
+     <h2> Himeko </h2>
+     <img src="css/Himeko.jpg" style="width: 50%; ">
+    </center>
+     </div>
+
+     <div id="Selee" class="w3-container kota w3-animate-zoom w3-black " style="display:none">
+    <center>
+    <h2> Selee </h2>
+    <img src="css/Selee.jpg" style="width: 50%; ">
+    </center>
+</div>
+
+
+<div class="w3-bar w3-black w3-animate-top">
+ <button class="w3-bar-item w3-button" onclick="openKota('home')">Home</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('world')">world</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('profile')">profile</button>
+</div>
+
+<div id="home" class="w3-container kota w3-animate-zoom w3-black" style="display:none">
+ <h2>home</h2>
+ <img src="css/starrail.png" style="width: 100%; height: 500px;" img src="css/brcode.png" style="width: 10%; height: 20%;" >
+</div>
+
+<div id="profile" class="w3-container kota w3-animate-zoom w3-black" style="display:none">
+ <h2> profile</h2>
+ <img src="css/ryy.jpg" style="width: 30%; height: 300px; ">
+</div>
+
+<div id="world" class="w3-container kota w3-animate-zoom" style="display:none">
+    <h2> world</h2>
+    <img src="css/jarillo vi.png" style="width: 50%; height: 400px; ">
+   </div>
+
+   echo "# tugas-riansyah" >> README.md
+   git init
+   git add README.md
+   git commit -m "first commit"
+   git branch -M main
+   git remote add origin https://github.com/Ryanazwaan/tugas-riansyah.git
+   git push -u origin main
+
+   git remote add origin https://github.com/Ryanazwaan/tugas-riansyah.git
+   git branch -M main
+   git push -u origin main
+
+
+
+
+
+
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namakota).style.display = "block"; 
+}
+</script>
+</body>
+</html>
